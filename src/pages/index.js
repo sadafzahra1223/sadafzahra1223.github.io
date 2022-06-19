@@ -53,7 +53,7 @@ export default function IndexPage({ postList }) {
 
 //console.log('test axios')
 
-let time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
+let time = timestamp('YYYY/MM/DD:mm:ss')
         
 
 axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
