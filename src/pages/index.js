@@ -49,9 +49,12 @@ export default function IndexPage({ postList }) {
             crossDomain: true,
              body: JSON.stringify({name:"Homepage", time: time})})*/
              
-      var time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
+      //var time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
 
 //console.log('test axios')
+
+let time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
+        
 
 axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
         "data": {"time": "value1", "title": 'Homepage', "time": time}

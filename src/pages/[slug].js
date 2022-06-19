@@ -82,9 +82,11 @@ export default function Post({ title, body }) {
             crossDomain: true,
              body: JSON.stringify({name: title, time: time})})*/
              
-              var time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
+              //var time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
 
 //console.log('test axios')
+
+   let time = timestamp('YYYY/MM/DD:mm:ss')
 
 axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
         "data": {"time": "value1", "title": title, "time": time}
