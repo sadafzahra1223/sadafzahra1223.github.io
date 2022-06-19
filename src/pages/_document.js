@@ -9,6 +9,8 @@ export default function Document() {
       <Head>
       
       <link rel="stylesheet" type="text/css" href="styles.css" />
+      
+
       </Head>
       <body>
         <Main />

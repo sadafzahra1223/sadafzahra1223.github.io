@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 let fs = require('fs')
 const timestamp = require('time-stamp')
+const axios = require('axios');
 
 export async function getStaticPaths() {
 
@@ -72,14 +73,25 @@ export default function Post({ title, body }) {
  //   })
  //   .then(res => res.json())
     //.then(res => console.log(res))
-    
+    /*
          const scriptURL = 'https://script.google.com/macros/s/AKfycbxgAa_1WLt4H2oZexdJYKCUrjStDHCsTZdtCl_htaEjOngwjnPjjDXiJaa24-pULflS/exec'
         
         let time = timestamp('YYYY/MM/DD:mm:ss')
         
  	fetch(scriptURL, { method: 'POST',
             crossDomain: true,
-             body: JSON.stringify({name: title, time: time})})
+             body: JSON.stringify({name: title, time: time})})*/
+             
+              var time = Date.now(); //timestamp('YYYY/MM/DD:mm:ss')
+
+//console.log('test axios')
+
+axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
+        "data": {"time": "value1", "title": title, "time": time}
+    })
+    /*.then( response => {
+        console.log(response.data);
+    });*/
              
         
   return (
@@ -88,7 +100,6 @@ export default function Post({ title, body }) {
         <title >{title}</title>
         
       </Head>
-      <script src="main.js"/>
       
       <div className="container mt-5">
            <div className="row">
