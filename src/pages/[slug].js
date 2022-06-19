@@ -105,6 +105,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
       
       <div className="container mt-5">
            <div className="row">
+           <div class="col-lg-8">
 
 	      <h1 className='fw-bolder mb-1'>{title}</h1>
 	      
@@ -118,6 +119,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 	      <Link href="/">
 		<a>Go back to home</a>
 	      </Link>
+	  </div>
 	</div>
 	</div>
     </main>
