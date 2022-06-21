@@ -28,7 +28,7 @@ export async function getStaticProps() {
 }
 
 
-export default function IndexPage({ postList }) {	  
+export default function BlogPage({ postList }) {	  
 //	fetch('/views', {
 //      method: 'POST',
 //      headers: {
@@ -57,7 +57,7 @@ let time = timestamp('YYYY/MM/DD:mm:ss')
         
 
 axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
-        "data": {"time": "value1", "title": 'Homepage', "time": time}
+        "data": {"time": "value1", "title": 'Blogpage', "time": time}
     })
     
     /*.then( response => {
@@ -67,14 +67,14 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
   return (
    <div>
-
+ 
 
   	
   	 <div className="container mt-5">
            <div className="row">
 		    <main>
 		      <Head>
-			<title>Portfolio</title>
+			<title>Blog</title>
 		      </Head>
 
 		      <h2 className="card-title">List of posts</h2>
