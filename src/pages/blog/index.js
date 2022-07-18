@@ -67,6 +67,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
   return (
    <div>
+    
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -86,6 +87,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 		    <main>
 		      <Head>
 			<title>Portfolio</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
 		      </Head>
 
 		      <h2 className="card-title"></h2>

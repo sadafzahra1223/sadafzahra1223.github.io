@@ -100,7 +100,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
     <main>
       <Head>
         <title >{title}</title>
-        
+        <link rel="stylesheet" type="text/css" href="styles.css" />
       </Head>
       
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -130,8 +130,8 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
       	</section>
       
 
-	      <Link href="/blog">
-		<a>Go back to blog</a>
+	      <Link href="/">
+		<a>Go back to Portfolio</a>
 	      </Link>
 	  </div>
 	</div>
