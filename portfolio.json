@@ -1,18 +1,10 @@
 [
-  {
-    "userId": 1,
-    "id": 1,
-    "slug": "three-design-principles-for-your-css-layout",
-    "title": "Three design principles for your CSS layout",
-    "description": " ...",
-    "body": "<br><br><img width='100%' src='layout.png'/><br>"
-  },
-  {
-    "userId": 1,
-    "id": 3,
-    "slug": "defining-routes-with-express-js-for-your-app",
-    "title": "Defining Routes with Express JS for your App",
-    "description": "Before starting to write code for your application, taking some time to think about its <br> basic architecture helps to give it a good structure to work with...",
-    "body": ""
-  }
+    {
+      "userId": 1,
+      "id": 4,
+      "slug": "vector-calligraphy",
+      "title": "Vector Calligraphy",
+      "description": "<img width='100%' src='layout.png'/>",
+      "body": "<br><br><img width='100%' src='layout.png'/>"
+    }  
 ]

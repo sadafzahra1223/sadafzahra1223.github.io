@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   )
   const postList = await response.json()*/
   
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
   
   return {
     paths: postList.map((post) => {
