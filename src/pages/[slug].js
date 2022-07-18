@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
   
   console.log('test')
   */
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
   
   
   //console.log(params.slug)     
@@ -130,8 +130,8 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
       	</section>
       
 
-	      <Link href="/blog">
-		<a>Go back to blog</a>
+	      <Link href="/">
+		<a>Go back to Portfolio</a>
 	      </Link>
 	  </div>
 	</div>
