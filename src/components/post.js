@@ -11,7 +11,7 @@ export default function Post({ title, description, id, slug }) {
 	            <h2 class="card-title h4">{title}</h2>
 	            <p class="card-text" dangerouslySetInnerHTML={{ __html: description }}></p>
 	            <Link href={`/${slug}`}>
-	            	<a class="btn btn-primary" href={`/${slug}`}>Read more →</a>
+	            	<a class="btn btn-primary" href={`/${slug}`}>View →</a>
       		    </Link>
 	            
 	        </div>
