@@ -2,6 +2,7 @@
   {
     "userId": 1,
     "id": 1,
+    "date": "July 20, 2022",
     "slug": "three-design-principles-for-your-css-layout",
     "title": "Three design principles for your CSS layout",
     "description": "Industry experts agree that typography, spacing and colour form the key basic principles <br> for designing things like layouts ...",
@@ -10,6 +11,7 @@
   {
     "userId": 1,
     "id": 2,
+    "date": "July 20, 2022",
     "slug": "getting-familiar-with-the-basics-of-linux",
     "title": "Getting Familiar with the Basics of Linux",
     "description": "When starting out on your Linux journey, there are a few concepts that are keys to <br> working with Linux successfully ...",
@@ -18,6 +20,7 @@
   {
     "userId": 1,
     "id": 3,
+    "date": "July 20, 2022",
     "slug": "defining-routes-with-express-js-for-your-app",
     "title": "Defining Routes with Express JS for your App",
     "description": "Before starting to write code for your application, taking some time to think about its <br> basic architecture helps to give it a good structure to work with...",

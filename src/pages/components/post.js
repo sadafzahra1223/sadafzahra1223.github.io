@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-export default function Post({ title, description, id, slug }) {
+export default function Post({ title, description, id, slug, date }) {
   return (
   
   		
 	    <div class="card mb-4">
 	       
 	        <div class="card-body">
-	            <div class="small text-muted">January 1, 2022</div>
+				<div class="small text-muted" dangerouslySetInnerHTML={{ __html: date }}></div>
 	            <h2 class="card-title h4">{title}</h2>
 	            <p class="card-text" dangerouslySetInnerHTML={{ __html: description }}></p>
 	            <Link href={`/blog/${slug}`}>
