@@ -82,6 +82,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
         </nav>
   	
   	 <div className="container mt-5">
+     <div class="col-lg-6">
            <div className="row">
 		    <main>
 		      <Head>
@@ -97,6 +98,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 		      </section>
 		    </main>
 	</div>
+  </div>
 	</div>
     </div>
   )
