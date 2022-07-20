@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const postList = await response.json()
   */
   
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
   
   	
   return {
@@ -67,7 +67,6 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
   return (
    <div>
-    
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -76,30 +75,31 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     	<li class="nav-item" id="load-svg"><a class="nav-link" href="/">Portfolio</a></li>
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/blog">Blog</a></li>  
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                       
+                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/blog">Blog</a></li>
+                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                         
                     </ul>
                 </div>
             </div>
         </nav>
   	
   	 <div className="container mt-5">
+     <div class="col-lg-6">
            <div className="row">
 		    <main>
 		      <Head>
-			<title>Portfolio</title>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
+			<title>Contact</title>
 		      </Head>
 
 		      <h2 className="card-title"></h2>
 
 		      <section>
-			{postList.map((post) => (
-			  <Post {...post} key={post.id} />
-			))}
+          <p>Sadaf is a Lettering Artist who is also interested in Watercolour art. See her work <a href="https://sadafzahra11223.blog"> here</a>.
+             </p>
+           <p> You can contact her at <strong>sadafzahra1223@gmail.com</strong>. </p>
 		      </section>
 		    </main>
 	</div>
+  </div>
 	</div>
     </div>
   )
