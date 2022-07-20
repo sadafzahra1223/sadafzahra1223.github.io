@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const postList = await response.json()
   */
   
-  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
   
   	
   return {
@@ -67,6 +67,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
   return (
    <div>
+    
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -74,20 +75,20 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    	<li class="nav-item" id="load-svg"><a class="nav-link" href="/">Portfolio</a></li>
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/blog">Blog</a></li>  
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                     
+                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/">Blog</a></li>
+                    	<li class="nav-item" id="load-svg"><a class="nav-link" href="/">Portfolio</a></li>  
+                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                       
                     </ul>
                 </div>
             </div>
         </nav>
   	
   	 <div className="container mt-5">
-     <div class="col-lg-6">
            <div className="row">
 		    <main>
 		      <Head>
-			<title>Portfolio</title>
+			<title>Blog</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
 		      </Head>
 
 		      <h2 className="card-title"></h2>
@@ -99,7 +100,6 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 		      </section>
 		    </main>
 	</div>
-  </div>
 	</div>
     </div>
   )
