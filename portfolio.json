@@ -1,6 +1,15 @@
 [
   {
     "userId": 1,
+    "id": 6,
+    "date": "July 25, 2022",
+    "slug": "blue-and-yellow-patterns",
+    "title": "Turquiouse and Lemon Yellow Patterns",
+    "description": "<img width='100%' src='blue-yellow.jpeg'/>",
+    "body": "<br><br><img width='100%' src='blue-yellow.jpeg'/>"
+  },
+  {
+    "userId": 1,
     "id": 5,
     "date": "July 22, 2022",
     "slug": "ampersands",
