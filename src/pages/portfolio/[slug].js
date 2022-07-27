@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   )
   const postList = await response.json()*/
   
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
   
   return {
     paths: postList.map((post) => {
@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
   
   console.log('test')
   */
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
   
   
   //console.log(params.slug)     
@@ -100,7 +100,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
     <main>
       <Head>
         <title >{title}</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        
       </Head>
       
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -109,9 +109,10 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item" id="load-svg"><a class="nav-link" href="/">Portfolio</a></li> 
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/blog">Blog</a></li>
-                        <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                       
+                    <li class="nav-item" id="create-svg"><a class="nav-link" href="/">Blog</a></li>
+                    <li class="nav-item" id="load-svg"><a class="nav-link" href="/portfolio">Portfolio</a></li> 
+                      
+                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                      
                     </ul>
                 </div>
             </div>
@@ -132,7 +133,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
       
 
 	      <Link href="/">
-		<a>Go back to Blog</a>
+		<a>Go back to Portfolio</a>
 	      </Link>
 	  </div>
 	</div>
