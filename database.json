@@ -1,6 +1,15 @@
 [
   {
     "userId": 1,
+    "id": 6,
+    "date": "July 29, 2022",
+    "slug": "include-css-in-html",
+    "title": "3 ways to include CSS in HTML",
+    "description": "Like all programming languages, JavaScript has types. But types in JavaScript are not explicitly declared ...",
+    "body": "<br><br><p>Styling is the presentation layer of any webpage or website. CSS is usually the styling framework preferred for this purpose. There are three common ways to include CSS in your HTML web page. Below we look at each one in greater detail.</p><br><p>1. <strong>Inline</strong><br><br>This is the easiest way to add styles to your HTML tag elements. Within the openingtag of the html element use style to add css attribute and value to specify required styling in the following way.<pre><code>&lt;p&gt; style='color:blue'>This is a paragraph&lt;/p&gt;</code></pre></p> <br><p>2. <strong>Internal</strong><br><br>If you want to repeat the same style across all your HTML elements on your page then you can define the style in between style tags on your page between the HTML head tags.<pre><code>&lt;head&gt;<br>&lt;style&gt;<br>  p {  color: blue; }<br> &lt;/style&gt;<br><br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;p&gt; This is a paragraph &lt;/p&gt;<br> &lt;/body&gt;</code></pre></p><br><p>3. <strong>External</strong><br><br>If you want to use the same CSS styling attributes across multiple HTML pages then you can define all your styles in a document with a <code>.css</code> filename and include it in your HTML document in the following way. <pre><code>&lt;head&gt;<br>&lt;link rel='stylesheet' type='text/css' href='index.css'&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;p&gt; This is a paragraph &lt;/p&lg;<br>&lt;/body&gt;<br></code></pre></p></body></html>"
+  },
+  {
+    "userId": 1,
     "id": 5,
     "date": "July 27, 2022",
     "slug": "javascript-types",
