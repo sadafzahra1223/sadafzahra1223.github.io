@@ -1,74 +1,38 @@
 [
   {
     "userId": 1,
-    "id": 8,
-    "date": "Aug 3, 2022",
-    "slug": "practice-eyes",
-    "title": "Eyes",
-    "description": "<img width='50%' src='/art/practice-eyes-1.jpeg'/>",
+    "id": 1,
+    "date": "Nov 15, 2022",
+    "slug": "still-life",
+    "title": "Still Life",
+    "description": "<img width='50%' src='/art/practice-eyes-2.jpeg'/>",
     "body": "<br><br><img width='80%' src='/art/practice-eyes-1.jpeg'/><br><br><img width='80%' src='/art/practice-eyes-2.jpeg'/> "
   },
   {
     "userId": 1,
-    "id": 7,
-    "date": "July 25, 2022",
-    "slug": "watercolour-lemon",
-    "title": "Watercolour Lemon",
-    "description": "<img width='50%' src='lemon.jpeg'/>",
-    "body": "<br><br><img width='80%' src='lemon.jpeg'/>"
+    "id": 2,
+    "date": "Aug 3, 2022",
+    "slug": "portraiture",
+    "title": "Portraiture",
+    "description": "<img width='50%' src='/art/practice-eyes-2.jpeg'/>",
+    "body": "<br><br><img width='80%' src='/art/practice-eyes-1.jpeg'/><br><br><img width='80%' src='/art/practice-eyes-2.jpeg'/> "
   },
   {
     "userId": 1,
-    "id": 6,
+    "id": 3,
     "date": "July 25, 2022",
-    "slug": "blue-and-yellow-patterns",
-    "title": "Turquiouse and Lemon Yellow Patterns",
-    "description": "<img width='100%' src='blue-yellow.jpeg'/>",
-    "body": "<br><br><img width='100%' src='blue-yellow.jpeg'/>"
+    "slug": "watercolour",
+    "title": "Watercolour",
+    "description": "<br><br><img width='100%' src='blue-yellow.jpeg'/>",
+    "body": "<br><br><img width='80%' src='lemon.jpeg'/><br><br><img width='100%' src='blue-yellow.jpeg'/>"
   },
   {
     "userId": 1,
-    "id": 5,
+    "id": 4,
     "date": "July 22, 2022",
-    "slug": "ampersands",
-    "title": "Ampersands",
+    "slug": "lettering",
+    "title": "Lettering",
     "description": "<img width='100%' src='ampersands.jpg'/>",
-    "body": "<br><br><img width='100%' src='ampersands.jpg'/>"
-  },
-    {
-      "userId": 1,
-      "id": 1,
-      "date": "July 20, 2022",
-      "slug": "vector-script",
-      "title": "Script",
-      "description": "<img width='100%' src='vector-script.svg'/>",
-      "body": "<br><br><img width='100%' src='vector-script.svg'/>"
-    },
-    {
-      "userId": 1,
-      "id": 2,
-      "date": "July 20, 2022",
-      "slug": "vector-print",
-      "title": "Print",
-      "description": "<img width='100%' src='vector-print.svg'/>",
-      "body": "<br><br><img width='100%' src='vector-print.svg'/>"
-    },
-    {
-      "userId": 1,
-      "id": 3,
-      "date": "July 20, 2022",
-      "slug": "vector-serifs",
-      "title": "Serifs",
-      "description": "<img width='100%' src='vector-serifs.svg'/>",
-      "body": "<br><br><img width='100%' src='vector-serifs.svg'/>"
-    },
-    {
-      "userId": 1,
-      "id": 4,
-      "date": "July 19, 2022",
-      "slug": "vector-calligraphy",
-      "title": "Calligraphy",
-      "description": "<img width='100%' src='vector-calligraphy.svg'/>",
-      "body": "<br><br><img width='100%' src='vector-calligraphy.svg'/>"
-    }
+    "body": "<br><br><img width='100%' src='ampersands.jpg'/><br><br><img width='100%' src='vector-script.svg'/><br><br><img width='100%' src='vector-print.svg'/><br><br><img width='100%' src='vector-serifs.svg'/><br><br><img width='100%' src='vector-calligraphy.svg'/>"
+  }
 ]

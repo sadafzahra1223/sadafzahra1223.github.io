@@ -1,1 +1,8 @@
 # blog
+
+
+npm run dev
+
+
+
+
