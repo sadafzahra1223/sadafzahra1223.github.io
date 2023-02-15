@@ -261,3 +261,10 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
     </div>
   )
 }
+
+/*
+{postList.map((post) => (
+			  <Post {...post} key={post.id} />
+			))}
+*/
+
