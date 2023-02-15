@@ -134,7 +134,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
       
 
 	      <Link href="/">
-		<a>Go back to Blog</a>
+		<a>Go back to Patterns</a>
 	      </Link>
 	  </div>
 	</div>

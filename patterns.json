@@ -1,47 +1,47 @@
 [
   {
     "userId": 1,
-    "id": 7,
-    "date": "Aug 1, 2022",
-    "slug": "pattern-1",
-    "title": "Pattern 1",
-    "description": "patterns..",
+    "id": 1,
+    "date": "Feb 16, 2023",
+    "slug": "pajama-pants",
+    "title": "Pajama Pants",
+    "description": "",
     "body": "afaf"
   },
   {
     "userId": 1,
-    "id": 6,
+    "id": 2,
     "date": "July 29, 2022",
-    "slug": "pattern-2",
-    "title": "Pattern 3",
-    "description": "patterns ...",
+    "slug": "brief-shorts",
+    "title": "Brief Shorts",
+    "description": "",
     "body": "adfasdf"
   },
   {
     "userId": 1,
-    "id": 7,
+    "id": 3,
     "date": "Aug 1, 2022",
-    "slug": "pattern-1",
-    "title": "Pattern 1",
-    "description": "patterns..",
+    "slug": "corset",
+    "title": "Corset",
+    "description": "",
     "body": "afaf"
   },
   {
     "userId": 1,
-    "id": 7,
+    "id": 4,
     "date": "Aug 1, 2022",
-    "slug": "pattern-1",
-    "title": "Pattern 1",
-    "description": "patterns..",
+    "slug": "t-shirt",
+    "title": "T-shirt",
+    "description": "",
     "body": "afaf"
   },
   {
     "userId": 1,
-    "id": 7,
+    "id": 5,
     "date": "Aug 1, 2022",
-    "slug": "pattern-1",
-    "title": "Pattern 1",
-    "description": "patterns..",
+    "slug": "variation",
+    "title": "Variation",
+    "description": "",
     "body": "afaf"
   }
 ]
