@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const postList = await response.json()
   */
   
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('patterns.json', 'utf8'))	
   
   	
   return {
@@ -85,8 +85,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
             </div>
         </nav>
   	
-  	 <div className="container mt-5">
-           <div className="row">
+  	 
 		    <main>
 		      <Head>
 			<title>Patterns</title>
@@ -94,8 +93,28 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 		      </Head>
 
 		      <h2 className="card-title"></h2>
-          
-        <section class="py-5">
+              <section className="py-5">
+	            <div className="container px-4 px-lg-5 mt-5">
+		        <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                {postList.map((post) => (
+                    <div className="col mb-5">
+                    <div className="card h-100">
+                <Post {...post} key={post.id} />
+                </div>
+			    </div>
+                ))}
+            </div>
+            </div>
+            </section>
+		    </main>
+	</div>
+	
+  )
+}
+
+/*
+                    <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -255,16 +274,5 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
             </div>
         
 		      </section>
-		    </main>
-	</div>
-	</div>
-    </div>
-  )
-}
-
-/*
-{postList.map((post) => (
-			  <Post {...post} key={post.id} />
-			))}
 */
 

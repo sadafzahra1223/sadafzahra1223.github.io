@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   )
   const postList = await response.json()*/
   
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('patterns.json', 'utf8'))	
   
   return {
     paths: postList.map((post) => {
@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
   
   console.log('test')
   */
-  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('patterns.json', 'utf8'))	
   
   
   //console.log(params.slug)     
