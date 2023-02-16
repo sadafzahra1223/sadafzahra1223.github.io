@@ -39,7 +39,16 @@
     "userId": 1,
     "id": 5,
     "date": "Aug 1, 2022",
-    "slug": "variation",
+    "slug": "cardigan",
+    "title": "Knit Cardigan Schoolteacher",
+    "description": "",
+    "body": "afaf"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "date": "Aug 1, 2022",
+    "slug": "Variation",
     "title": "Variation",
     "description": "",
     "body": "afaf"
