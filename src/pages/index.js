@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Post from '../components/post'
+import Post from './components/post'
 let fs = require('fs')
 const timestamp = require('time-stamp')
 import Script from 'next/script'
@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const postList = await response.json()
   */
   
-  const postList = JSON.parse(fs.readFileSync('patterns.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
   
   	
   return {
@@ -74,205 +74,32 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
                 <a class="navbar-brand" href="#!">Sadaf Zahra</a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item" id="load-svg"><a class="nav-link" href="/">Patterns</a></li> 
-                    <li class="nav-item" id="load-svg"><a class="nav-link" href="/portfolio">Portfolio</a></li>   
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                     
                     <li class="nav-item" id="create-svg"><a class="nav-link" href="/blog">Blog</a></li>
-                      
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                       
+                    <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                       
                     </ul>
                 </div>
             </div>
         </nav>
   	
-  	 
+  	 <div className="container mt-5">
+           <div className="row">
 		    <main>
 		      <Head>
-			<title>Patterns</title>
+			<title>Blog</title>
       <link rel="stylesheet" type="text/css" href="styles.css" />
 		      </Head>
 
 		      <h2 className="card-title"></h2>
-              <section className="py-5">
-	            <div className="container px-4 px-lg-5 mt-5">
-		        <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-                {postList.map((post) => (
-                    <div className="col mb-5">
-                    <div className="card h-100">
-                <Post {...post} key={post.id} />
-                </div>
-			    </div>
-                ))}
-            </div>
-            </div>
-            </section>
+		      <section>
+			{postList.map((post) => (
+			  <Post {...post} key={post.id} />
+			))}
+		      </section>
 		    </main>
 	</div>
-	
+	</div>
+    </div>
   )
 }
-
-/*
-                    <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col mb-5">
-                    <div class="card h-100">
-                           
-                           <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                           <div class="card-body p-4">
-                                <div class="text-center">
-                                    
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        
-		      </section>
-*/
-

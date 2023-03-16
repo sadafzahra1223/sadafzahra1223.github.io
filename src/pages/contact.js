@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Post from '../components/post'
+import Post from './components/post'
 let fs = require('fs')
 const timestamp = require('time-stamp')
 import Script from 'next/script'
@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const postList = await response.json()
   */
   
-  const postList = JSON.parse(fs.readFileSync('portfolio.json', 'utf8'))	
+  const postList = JSON.parse(fs.readFileSync('database.json', 'utf8'))	
   
   	
   return {
@@ -74,11 +74,8 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item" id="load-svg"><a class="nav-link" href="/patterns">Patterns</a></li> 
                     <li class="nav-item" id="create-svg"><a class="nav-link" href="/">Blog</a></li>
-                    <li class="nav-item" id="load-svg"><a class="nav-link" href="/portfolio">Portfolio</a></li> 
-                      
-                      <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                         
+                    <li class="nav-item" id="create-svg"><a class="nav-link" href="/contact">Contact</a></li>                         
                     </ul>
                 </div>
             </div>
