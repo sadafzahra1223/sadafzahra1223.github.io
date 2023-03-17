@@ -92,7 +92,7 @@ axios.post('https://sheetdb.io/api/v1/rw00c59mbwfd3',{
 		      <h2 className="card-title"></h2>
 
 		      <section>
-          <p>Sadaf is a Lettering Artist who is also interested in Watercolour art. See her work <a href="https://sadafzahra11223.blog"> here</a>.
+          <p>Sadaf is a Lettering Artist who is also interested in Watercolour art. See her work <a href="https://sadafzahra1223.blog"> here</a>.
              </p>
            <p> You can contact her at <strong>sadafzahra1223@gmail.com</strong>. </p>
 		      </section>
