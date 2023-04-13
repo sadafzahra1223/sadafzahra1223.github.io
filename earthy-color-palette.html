@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SadafZahra1223</title>
+  <style>
+    
+/**
+* Here, the layout is handled by the grid instead.
+* The main area is sized with 1fr,
+* which works the same way as flex-grow: 1 with a flex-basis of 0
+* in flexbox, i.e. takes up the remaining space.
+*/
+
+
+body {
+	margin:0;
+	font-family: "Comfortaa", sans-serif;
+}
+
+
+
+ .main-content {
+	 margin: 1em auto 0;
+	 max-width: 800px;
+}
+ .palette-grid {
+	 display: grid;
+	 grid-template-columns: repeat(12, 1fr);
+	 grid-template-rows: auto 300px auto 240px auto repeat(2, 200px);
+	 grid-gap: 20px;
+	 justify-content: center;
+	 padding: 20px;
+}
+ .palette {
+	 background: #fff;
+	 overflow: hidden;
+	 position: relative;
+	 top: 0;
+	 padding: 0;
+	 box-shadow: 0px 5px 20px rgba(128, 128, 128, 0.1);
+	 display: flex;
+	 align-items: stretch;
+	 flex-wrap: wrap;
+	 flex-flow: column;
+	 transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+ .palette--grays {
+	 grid-column: span 2;
+}
+ .palette-headers {
+	 grid-column: span 12;
+}
+ .palette__info {
+	 color: #333;
+	 position: relative;
+	 flex: 0 0 auto;
+	 font-size: 14px;
+	 padding: 12px;
+}
+ .palette__info__hexcode {
+	 margin-top: 3px;
+	 font-size: 12px;
+	 color: gray;
+}
+
+ .palette__color {
+	 background: var(--bg-color);
+	 height: 70%;
+	 /*flex: 1;*/
+}
+
+ 
+ .font-white {
+	 color: #fff;
+}
+
+.page-header {
+  background-color: black;
+  color: #fff;
+  
+}
+ 
+
+  </style>
+</head>
+<body>
+  
+  <div style="border: solid black 1px; height: 100px;" class="page-header">
+    <br>
+    <p style="float:left; font-size: 21px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sadaf Zahra</p>
+    <a href="#" style="float:right;text-decoration: none; color:#dee2e6"><br>Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="/" style="float:right;text-decoration: none; color:#dee2e6"><br>Blog&nbsp;&nbsp;&nbsp;</a>
+  </div>
+  
+  <br><br>
+
+  <div class="main-content">
+    <div class="palette-grid">
+      
+     
+      <div class="palette-headers">
+        <h1>Earthy Color Palette</h1>
+        
+      </div>
+      <div class="palette palette--grays">
+        <div class="palette__color" style="--bg-color: #00414A;"></div>
+        <div class="palette__info">
+          <div class="palette__info__name">Tahitian Tide</div>
+          <div class="palette__info__hexcode">#00414A</div>
+        </div>
+      </div>
+      <div class="palette palette--grays">
+        <div class="palette__color" style="--bg-color: #19CBE3;"></div>
+        <div class="palette__info">
+          <div class="palette__info__name">Sky Blue</div>
+          <div class="palette__info__hexcode">#19CBE3</div>
+        </div>
+      </div>
+      <div class="palette palette--grays">
+        <div class="palette__color" style="--bg-color:  #018697"></div>
+        <div class="palette__info">
+          <div class="palette__info__name">Turquoise</div>
+          <div class="palette__info__hexcode"> #018697</div>
+        </div>
+      </div>
+      <div class="palette palette--grays">
+        <div class="palette__color" style="--bg-color: #4A2000;"></div>
+        <div class="palette__info">
+          <div class="palette__info__name">Dark Burgundy</div>
+          <div class="palette__info__hexcode">#4A2000</div>
+        </div>
+      </div>
+      <div class="palette palette--grays">
+        <div class="palette__color" style="--bg-color: #964202"></div>
+        <div class="palette__info">
+          <div class="palette__info__name">Chocolate</div>
+          <div class="palette__info__hexcode">#964202</div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+ 
+    
+   
+
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222592681-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-222592681-1');
+</script>
+
+</body>
+
+</html>
